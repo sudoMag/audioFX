@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+}
+
+#background {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(96, 168, 150);
+    flex-direction: column;
+}
+
+#circle {
+    margin: auto;
+    width: 40vh;
+    height: 40vh;
+    background-color: #388369;
+    border-radius: 50%;
+    z-index: 4;
+    display: flex;
+}
+
+audio {
+    margin: 0 auto;
+}
+
+#wave-circle {
+    animation: waveAnimation 500ms;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: rgb(86, 168, 168);
+    z-index: 0;
+}
+
+@keyframes waveAnimation {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
